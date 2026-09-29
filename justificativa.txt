@@ -1,0 +1,24 @@
+Como já apresentado na tarefa 1, a escolha de PCBs (Placas de Circuito Impresso) ocorreu 
+pela familiaridade com o uso desta tecnologia em equipes extras e pelo interesse comum pelo
+tema, que também está relacionado com o curso de Engenharia de Controle e Automação.
+
+Além disso, a expansão feita nesta tarefa se deu pela especificação nos tipos de placas
+que são produzidas, como placas de face dupla, de face única e placas multilayer. Houve 
+também um detalhamento na forma de produção de PCBs, que tem a utilização de máquinas 
+laminadoras, máquinas de soldagem e máquinas de inspeção óptica, que são respectivamente 
+responsáveis por: aplicação de camadas de cobre e isolantes no substrato da placa no início 
+de sua produção, posicionamento dos componentes eletrônicos e soldá-los na placa e, por fim, 
+verificar se há defeitos por meio de uma inspeção óptica automatizada.
+
+Nesta tarefa, a escolha da próxima demanda passou a ser feita por estratégias intercambiáveis
+(Strategy), que podem ser trocadas durante a execução: atender os pedidos por ordem de chegada,
+priorizar o maior pedido ou produzir o máximo de placas possível com o orçamento disponível. O
+estado das demandas agora usa um enum (StatusDemanda), e máquinas e placas implementam a interface
+Auditavel para gerar o relatório de auditoria.
+
+Também foram criados dois cenários, Ideal e Apocalíptico, que mudam o orçamento e a chance de
+falha. As máquinas se desgastam a cada uso e quebram quando a saúde chega a zero. Por fim, o
+armazém mostra as placas prontas, separado do estoque de matéria-prima.
+
+Para o futuro, a planta pode receber novos processos (como testes elétricos e serigrafia), placas
+mais complexas e novas estratégias de produção.
